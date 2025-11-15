@@ -1,7 +1,8 @@
 # Labonneaffaire
 
-
-|![Screenshot 1](public/assets/screenshots/screenshot.png) |![Screenshot 1 2](public/assets/screenshots/screenshot2.png)|
+|                       Capture 1                            |                         Capture 2                            |
+|  --------------------------------------------------------  |------------------------------------------------------------  |
+|  ![Screenshot 1](public/assets/screenshots/screenshot.png) |![Screenshot 1 2](public/assets/screenshots/screenshot2.png)  |
 
 ## Fonctionnalités
 
