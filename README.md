@@ -1,20 +1,18 @@
 # Labonneaffaire
 
-## Fonctionnalités 
+![Aperçu](public/assets/screenshots/screenshot.png)
 
-- Affichage d’une liste de produits
+## Fonctionnalités
 
-- Nom du produit
-
-- Prix
-
-- Bouton J’aime avec compteur
-
-- Bouton Détails pour voir la description
+* Affichage d’une liste de produits
+* Nom du produit
+* Prix
+* Bouton **J’aime** avec compteur
+* Bouton **Détails** pour voir la description
 
 ## Téléchargement
 
-```git
+```bash
 git clone git@github.com:aliou90/La-bonne-affaire.git
 ```
 
@@ -26,4 +24,6 @@ Pour démarrer un serveur de développement local, exécutez :
 ng serve
 ```
 
-Une fois le serveur en cours d'exécution, ouvrez votre navigateur et accédez à `http://localhost:4200/`. L'application se rechargera automatiquement chaque fois que vous modifiez l'un des fichiers source.
+Une fois le serveur en cours d'exécution, ouvrez votre navigateur et accédez à :
+👉 `http://localhost:4200/`
+L'application se rechargera automatiquement à chaque modification des fichiers source.
