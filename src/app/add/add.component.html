@@ -1,0 +1,66 @@
+<!-- Ajouter un nouvel article -->
+<h2>Ajouter un nouvel article</h2>
+
+<!-- <h3> Formulaire de type template-driven</h3>
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <div class="form-group">
+    <label for="titre">Titre de l'article</label>
+    <input
+      type="text"
+      name="titre"
+      [(ngModel)]="titleToAdd"
+      id="titre"
+      class="form-control"
+      placeholder="Entrez le titre"
+      minlength="3" 
+      #titre="ngModel"
+      required
+    >
+    <div *ngIf="titre.invalid && (titre.dirty || titre.touched)">
+        <div *ngIf="titre.errors?.['required']">
+            <small class="text-danger">Le titre est requis.</small>
+        </div>
+        <div *ngIf="titre.errors?.['minlength']">
+            <small class="text-danger">Le titre doit contenir au moins 3 caractères.</small>
+        </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="prix">Prix de l'article (€)</label>
+    <input
+      type="number"
+      name="prix"
+      [(ngModel)]="priceToAdd"
+      id="prix"
+      class="form-control"
+      placeholder="Entrez le prix"
+      min="1"
+      #prix="ngModel"
+      required
+    >
+  </div>
+    <div *ngIf="prix.invalid && (prix.dirty || prix.touched)">
+        <div *ngIf="prix.errors?.['required']">
+            <small class="text-danger">Le prix est requis.</small>
+        </div>
+        <div *ngIf="prix.errors?.['min']">
+            <small class="text-danger">Le prix doit être supérieur ou égal à 0.</small>
+        </div>
+    </div>
+
+
+  <button type="submit" [disabled]="!f.valid" class="btn btn-primary">Ajouter</button>
+</form> -->
+
+<h3>Formulaire Réactif</h3>
+
+<form (ngSubmit)="onSubmit()">
+  <label>Titre</label>
+  <input type="text" [formControl]="titleToAdd">
+  <br>
+  <label>Prix</label>
+  <input type="number" [formControl]="priceToAdd">
+  <br>
+  <button type="submit">Ajouter</button>
+</form>

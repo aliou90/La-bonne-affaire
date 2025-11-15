@@ -1,0 +1,8 @@
+/* Pour afficher les boutons "Je n'aime pas" */
+.show {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}

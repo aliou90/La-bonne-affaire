@@ -1,0 +1,13 @@
+/* Pour afficher les boutons "Je n'aime pas" */
+.noLike {
+  background-color: blue;
+  color: white;
+}
+
+.show {
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}

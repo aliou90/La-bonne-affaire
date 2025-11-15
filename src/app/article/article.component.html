@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-md-4 mb-4" *ngFor="let article of articles">
+    <div class="card shadow-sm">
+      <img [src]="article.imageSrc" [alt]="article.imageAltText" [title]="article.titre" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title text-uppercase" [ngStyle]="{'color': getAvailabilityStyle(article.disponible) }">
+          {{ article.titre }}
+        </h5>
+        <p class="card-text">Prix : {{ article.prix }} €</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <small *ngIf="!article.disponible" class="text-danger">Indisponible</small>
+          <small *ngIf="article.disponible" class="text-success">Disponible</small>
+        </div>
+        <a routerLink="/details/{{ article.id }}" class="btn btn-primary mt-2">Voir les détails</a>
+        <div class="d-flex justify-content-between align-items-center mt-3">
+          <div>
+            <button
+              class="like btn btn-outline-success" (click)="onLike(article, true)"
+              [ngClass]="{
+                  'show' : article.like === false,
+                  'hidden' : article.like === true
+              }"
+              >
+                  J'aime
+            </button>
+            <button
+              class="noLike btn btn-outline-danger" (click)="onLike(article, false)"
+              [ngClass]="{
+                  'show' : article.like === true,
+                  'hidden' : article.like === false
+                  }"
+              >
+                  Je n'aime pas
+            </button>
+          </div>
+          <em class="text-muted">Nombre de likes : {{article.totalLikes}}</em>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
