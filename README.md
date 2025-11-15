@@ -1,6 +1,7 @@
 # Labonneaffaire
 
-|![screenshot](public/assets/screenshots/screenshot.png) |![screenshot](public/assets/screenshots/screenshot2.png)|
+
+|![Screenshot 1](public/assets/screenshots/screenshot.png) |![Screenshot 1 2](public/assets/screenshots/screenshot2.png)|
 
 ## Fonctionnalités
 
